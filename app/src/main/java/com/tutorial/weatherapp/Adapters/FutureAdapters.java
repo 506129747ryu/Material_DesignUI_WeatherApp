@@ -11,18 +11,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.tutorial.weatherapp.Domains.FutureDomain;
-import com.tutorial.weatherapp.Domains.Hourly;
+import com.tutorial.weatherapp.Domains.Future;
 import com.tutorial.weatherapp.R;
 
 import java.util.ArrayList;
 
 public class FutureAdapters extends RecyclerView.Adapter<FutureAdapters.viewHolders> {
 
-    ArrayList<FutureDomain> items;
+    ArrayList<Future> items;
     Context context;
 
-    public FutureAdapters(ArrayList<FutureDomain> items, Context context) {
+    public FutureAdapters(ArrayList<Future> items, Context context) {
         this.items = items;
         this.context = context;
     }
@@ -45,8 +44,8 @@ public class FutureAdapters extends RecyclerView.Adapter<FutureAdapters.viewHold
 
         holder.dayTxt.setText(items.get(position).getDay());
         holder.statusTxt.setText(items.get(position).getStatus());
-        holder.lowTxt.setText(items.get(position).getLowTemp());
-        holder.highTxt.setText(items.get(position).getHighTemp());
+        holder.lowTxt.setText(items.get(position).getLowTemp()+"°");
+        holder.highTxt.setText(items.get(position).getHighTemp()+"°");
         int drawableResourceId = holder.itemView.getResources().getIdentifier(
                 items.get(position).getPicPath(),
                 "drawable",

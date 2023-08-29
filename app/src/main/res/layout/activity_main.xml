@@ -199,12 +199,13 @@
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
                 android:clipToPadding="false"
                 android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:id="@+id/recyclerview">
+                android:paddingEnd="16dp">
 
             </androidx.recyclerview.widget.RecyclerView>
 

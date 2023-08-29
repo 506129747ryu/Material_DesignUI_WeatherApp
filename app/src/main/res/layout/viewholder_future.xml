@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="day"
+        android:text="@string/day"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,11 +20,12 @@
 
     <ImageView
         android:id="@+id/pic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
+        android:contentDescription="weather"
         android:src="@drawable/sunny"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dayTxt"

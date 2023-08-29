@@ -24,7 +24,7 @@ class MainActivity: ComponentActivity() {
     }
 
     private fun setVariable() {
-        var nextBtn = findViewById<TextView>(R.id.nextBtn)
+        val nextBtn = findViewById<TextView>(R.id.nextBtn)
         val listener = View.OnClickListener {
             startActivity(Intent(this@MainActivity, FutureActivity::class.java))
         }
@@ -34,7 +34,7 @@ class MainActivity: ComponentActivity() {
     }
 
     private fun initRecyclerView() {
-        var items = ArrayList<Hourly>()
+        val items = ArrayList<Hourly>()
 
         items.add(Hourly("9 am", 28, "cloudy"))
         items.add(Hourly("11 pm", 29, "sunny"))

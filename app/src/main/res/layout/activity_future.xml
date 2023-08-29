@@ -34,13 +34,15 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/image" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/background2"
                 android:orientation="vertical">
@@ -98,6 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="16dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -176,6 +179,7 @@
                             android:layout_width="34dp"
                             android:layout_height="34dp"
                             android:layout_gravity="center"
+                            android:contentDescription="@string/image"
                             android:src="@drawable/humidity" />
 
                         <TextView
@@ -204,8 +208,12 @@
                 android:id="@+id/recyclerview2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:nestedScrollingEnabled="true"
-                android:layout_weight="1"/>
+                android:layout_marginTop="16dp"
+                android:clipToPadding="false"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
     </ScrollView>

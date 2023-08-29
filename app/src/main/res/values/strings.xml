@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+    <string name="image">image</string>
+    <string name="day">day</string>
+    <string name="highTxt">26</string>
+    <string name="lowTxt">10</string>
 </resources>
